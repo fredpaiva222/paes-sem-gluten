@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camila Moura - Pães Artesanais Sem Glúten</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Inter:wght@300;400;600;700;800&family=Sora:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome / Phosphor Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F7BD57',
+                        secondary: '#00AD3B',
+                        accent: '#eeaf49',
+                        textPrimary: '#241811',
+                        brandBrown: '#724a2d',
+                        darkBg: '#2E190D',
+                        darkRed: '#7A1504',
+                        lightCream: '#FCFBF8',
+                    },
+                    fontFamily: {
+                        script: ['Aladin', 'cursive'],
+                        heading: ['Sora', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        body: ['Work Sans', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'btn-glow': '0 10px 25px rgba(247, 189, 87, 0.4)',
+                        'card': '0 10px 30px rgba(0, 0, 0, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { color: #241811; overflow-x: hidden; }
+        
+        .hero-bg {
+            background-color: #1a0a02;
+            background-image: linear-gradient(180deg, rgba(46, 25, 13, 0.5) 0%, rgba(20, 8, 2, 0.85) 100%), url('https://deliciassemgluten.online/wp-content/uploads/2023/12/fpdl.in_padeiro-feminino-amassar-ou-formar-massa-enquanto-trabalhava-na-padaria-pizza-fresca-torta-pao-ou-processo-de-preparacao-de-massa-doce_266732-32677_large.jpg');
+            background-size: cover;
+            background-position: center top;
+            position: relative;
+        }
+
+        .animated { animation-duration: 1s; animation-fill-mode: both; }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translate3d(0, 40px, 0); }
+            to { opacity: 1; transform: translate3d(0, 0, 0); }
+        }
+        .fadeInUp { animation-name: fadeInUp; }
+
+        .shape-divider-bottom svg, .shape-divider-top svg {
+            width: calc(100% + 1.3px);
+            height: 50px;
+            display: block;
+        }
+        @media (min-width: 768px) {
+            .shape-divider-bottom svg, .shape-divider-top svg { height: 90px; }
+        }
+
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .dot-pattern {
+            background-color: #FCFBF8;
+            background-image: radial-gradient(#d5cac2 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .custom-accordion summary { list-style: none; }
+        .custom-accordion summary::-webkit-details-marker { display: none; }
+    </style>
+    <!-- UTMify Pixel -->
+    <script>
+      window.pixelId = "69e36dcdd9b46ee9e7852ca4";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
+
+    <!-- UTMify UTMs -->
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+</head>
+<body class="font-sans antialiased bg-white text-textPrimary">
+
+    <!-- HERO SECTION -->
+    <section class="hero-bg pt-12 pb-24 md:pt-20 md:pb-40 text-center px-4 relative z-0 flex flex-col items-center">
+        <div class="relative z-10 max-w-5xl mx-auto w-full">
+            <div class="inline-block px-5 py-2 rounded-full bg-black/40 border border-white/10 mb-8">
+                <span class="font-sans text-xs tracking-[0.2em] font-light text-gray-300 uppercase">CAMILA MOURA</span>
+            </div>
+            
+            <h1 class="font-script text-4xl md:text-5xl lg:text-7xl leading-tight text-white mb-6 animate-[fadeInUp_1s_ease-out]">
+                Se seus pães sem glúten ficam duros, esfarelam ou tem gosto de papelão, o problema não é a receita — <span class="text-primary tracking-wide">é o MÉTODO que você está usando.</span>
+            </h1>
+
+            <h2 class="font-body font-light text-gray-200 text-sm md:text-lg max-w-4xl mx-auto leading-relaxed mt-4">
+                Descubra o método que já ajudou <span class="text-accent font-black">mais de 3.000 mulheres</span> a fazer pães sem glúten fofinhos, com casquinha crocante e sabor de padaria artesanal — mesmo sem nenhuma experiência na cozinha.
+            </h2>
+        </div>
+    </section>
+
+    <!-- SECTION 1: 1º Aplicativo -->
+    <section class="max-w-6xl mx-auto px-6 py-12 md:py-24 relative z-20">
+        <div class="flex flex-col md:flex-row items-center gap-10 md:gap-20">
+            <div class="w-full md:w-3/12 flex justify-center animated fadeInUp">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2024/01/primeiro.png" alt="1º Lugar de Receitas" class="w-32 md:w-40 drop-shadow-2xl">
+            </div>
+            <div class="w-full md:w-9/12">
+                <h2 class="font-script text-4xl md:text-5xl mb-6 leading-tight">
+                    <span class="text-brandBrown">1º Aplicativo</span> de Receitas sem Glúten
+                </h2>
+                <div class="font-body text-[15px] md:text-base space-y-5 text-gray-700 leading-relaxed max-w-2xl">
+                    <p>Mais de <strong>200 receitas testadas e aprovadas</strong>, explicadas com <strong>videoaulas gravadas</strong> passo a passo <strong>Visual</strong>.</p>
+                    <p>Você vai aprender a fazer <strong>pães fofinhos, bolos deliciosos, massas leves e panetones incríveis</strong> — mesmo que nunca tenha cozinhado sem glúten antes.</p>
+                    <p>Tudo foi pensado para mulheres que querem praticidade, saúde e sabor no <strong>dia a dia</strong>.</p>
+                    <p>Ideal para <strong>iniciantes</strong> e também para quem já tem experiência na cozinha.</p>
+                    <p>A Camila Moura te guia em cada etapa, mostrando <strong>o ponto da massa, textura e preparo</strong> com clareza e carinho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Faça Pães Sem Glúten -->
+    <section class="bg-lightCream w-full relative">
+        <div class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-20">
+            <div class="w-full md:w-6/12">
+                <h2 class="font-script text-4xl md:text-5xl mb-6 leading-tight pr-4">
+                    <span class="text-brandBrown">Faça Pães Sem Glúten</span> Fofinhos, Deliciosos e Fáceis de Fazer...
+                </h2>
+                <div class="font-body text-[15px] md:text-base space-y-5 text-gray-700 leading-relaxed">
+                    <p>Você vai aprender a fazer <strong>pães artesanais incríveis</strong> — macios por dentro, com casquinha crocante por fora, e sem nenhuma complicação!</p>
+                    <p>Mesmo que você nunca tenha feito pão antes, as <strong>videoaulas exclusivas</strong> te mostram cada etapa com clareza.</p>
+                    <p>Você vai tirar o <strong>glúten da sua vida</strong> e colocar muito mais sabor e saúde na sua mesa.</p>
+                    <p>Tudo explicado passo a passo, com ingredientes acessíveis e <strong>resultados surpreendentes.</strong></p>
+                </div>
+            </div>
+            <div class="w-full md:w-6/12 flex justify-center animated fadeInUp">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/guia_paes_sem_gluten-1-1.webp" alt="Pães Fofinhos e Deliciosos" width="800" height="615" class="w-full max-w-md md:max-w-full drop-shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Transforme a sua vida -->
+    <section class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+        <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+            <div class="w-full md:w-5/12 flex justify-center animated fadeInUp">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/guia_paes_sem_gluten-2.png" alt="Proibido Glúten" width="600" height="600" class="w-full max-w-[320px] md:max-w-full drop-shadow-lg">
+            </div>
+            <div class="w-full md:w-7/12 text-center md:text-left">
+                <h2 class="font-script text-4xl md:text-5xl mb-6 leading-tight">
+                    <span class="text-brandBrown">Transforme a sua vida</span> eliminando o glúten!
+                </h2>
+                <div class="font-body text-[15px] md:text-base space-y-5 text-gray-700 leading-relaxed mb-8">
+                    <p><strong>Chega daquela sensação de inchaço, dores de cabeças, descontrole intestinal, queda de cabelo, unhas quebradiças</strong> e outros sintomas que só o glúten causa.</p>
+                    <p>Hoje você vai ter a <strong>oportunidade de aprender</strong> comigo, Camila Moura, e ver como a <strong>sua vida se tornará muito melhor sem o glúten.</strong></p>
+                    <p>Vou te ensinar <strong>passo a passo</strong> mesmo que nunca tenha feito um pão na vida.</p>
+                </div>
+                <button class="bg-primary hover:bg-[#ebae42] transition-colors shadow-btn-glow text-textPrimary font-extrabold font-sans text-sm md:text-base px-10 py-5 rounded-2xl uppercase tracking-wider w-full md:w-auto transform hover:-translate-y-1">
+                    SIM! EU QUERO APRENDER
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Quais Receitas Você Vai Aprender (DARK BACKGROUND GRID) -->
+    <section class="bg-brandBrown pb-20 relative pt-24 mt-10">
+        <!-- Top Wave Divider -->
+        <div class="absolute top-[-1px] left-0 w-full overflow-hidden leading-none shape-divider-top rotate-180">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path class="fill-white" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+            </svg>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 z-10 relative">
+            <h2 class="text-center font-script text-4xl md:text-5xl text-white mb-12">
+                Quais Receitas Você Vai Aprender?
+            </h2>
+
+            <!-- CSS Grid for 4 sections -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                
+                <!-- CARD 1 -->
+                <div class="bg-lightCream rounded-xl shadow-card overflow-hidden flex flex-col transform transition hover:scale-[1.01]">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2024/05/imagens-zero-gl195186ten-37-1.webp" alt="Receitas de Pães Borda" class="w-full h-[220px] object-cover">
+                    <div class="p-8 flex flex-col grow">
+                        <h3 class="font-sans font-bold text-center text-lg mb-6 text-brandBrown">Receitas de Pães:</h3>
+                        <ul class="space-y-3 font-body text-sm font-medium text-gray-700 flex-grow mb-6">
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão Francês</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão de Batata</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão de Mandioquinha</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão de Sanduíche</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão Australiano</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão de Hambúrguer</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão Tradicional</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão Multigrãos</span></li>
+                        </ul>
+                        <div class="flex items-center justify-center gap-3 mt-auto pt-4 border-t border-gray-200">
+                            <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/icons8-caution-68-1.png" alt="Aviso" class="w-8 h-8">
+                            <p class="text-xs font-semibold text-gray-600 text-center uppercase tracking-wide">E outras da Coleção Exclusiva de Receitas que não foram listadas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="bg-lightCream rounded-xl shadow-card overflow-hidden flex flex-col transform transition hover:scale-[1.01]">
+                    <div class="p-8 flex flex-col grow">
+                        <h3 class="font-sans font-bold text-center text-lg mb-6 text-brandBrown">Pães na Panificadora:</h3>
+                        <ul class="space-y-3 font-body text-sm font-medium text-gray-700 flex-grow mb-8">
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão de Leite</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão de Francês</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão de Abóbora</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão de Sementes</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão Doce</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão de Leite de Coco</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão Multigrãos</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Pão Integral</span></li>
+                        </ul>
+                        <div class="flex items-center justify-center gap-3 mt-auto pt-4 border-t border-gray-200">
+                            <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/icons8-caution-68-1.png" alt="Aviso" class="w-8 h-8">
+                            <p class="text-xs font-semibold text-gray-600 text-center uppercase tracking-wide">E outras inúmeras Receitas de Panificação Elétrica</p>
+                        </div>
+                    </div>
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2025/12/maquina-de-pao.png-1024x536.webp" alt="Pães na Panificadora" class="w-full h-auto mt-auto border-t-4 border-white">
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="bg-lightCream rounded-xl shadow-card overflow-hidden flex flex-col transform transition hover:scale-[1.01] col-span-1 md:col-span-2 lg:col-span-1">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2024/05/imagens-zero-gl195186ten-39-1.webp" alt="Mix de Farinhas Sem Glúten" class="w-full h-[220px] object-cover">
+                    <div class="p-8 flex flex-col grow">
+                        <h3 class="font-sans font-bold text-center text-lg mb-6 text-brandBrown">Mix de Farinhas:</h3>
+                        <ul class="space-y-3 font-body text-sm font-medium text-gray-700 flex-grow mb-8">
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Mix de farinha para Pães</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Mix de farinha para Bolos</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Mix de farinha para Pizza</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Mix de farinha Integral</span></li>
+                            <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i><span>Mix de farinha para Panquecas</span></li>
+                        </ul>
+                        <div class="flex items-center justify-center gap-3 mt-auto pt-4 border-t border-gray-200">
+                            <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/icons8-caution-68-1.png" alt="Aviso" class="w-8 h-8">
+                            <p class="text-xs font-semibold text-gray-600 text-center uppercase tracking-wide">E outros inúmeros Mix de Farinhas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="bg-lightCream rounded-xl shadow-card overflow-hidden flex flex-col transform transition hover:scale-[1.01] col-span-1 md:col-span-2 lg:col-span-1 relative">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2024/05/imagens-zero-gl195186ten-38-1.webp" alt="Receitas Bônus Sem Glúten" class="w-full h-[220px] object-cover">
+                    <div class="p-8 flex flex-col grow">
+                        <h3 class="font-sans font-bold text-center text-lg mb-6 text-brandBrown">Receitas Bônus</h3>
+                        
+                        <ul class="space-y-3 font-body text-sm font-medium text-gray-700 flex-grow grid grid-cols-2 gap-x-2 gap-y-3 pl-2 content-start mb-6">
+                            <li class="flex items-center gap-2"><i class="fa fa-check-circle text-secondary text-xs"></i><span>Massa de Pizza</span></li>
+                            <li class="flex items-center gap-2"><i class="fa fa-check-circle text-secondary text-xs"></i><span>Bolo de Milho</span></li>
+                            <li class="flex items-center gap-2"><i class="fa fa-check-circle text-secondary text-xs"></i><span>Pastel</span></li>
+                            <li class="flex items-center gap-2"><i class="fa fa-check-circle text-secondary text-xs"></i><span>Empadinhas</span></li>
+                            <li class="flex items-center gap-2"><i class="fa fa-check-circle text-secondary text-xs"></i><span>Focaccia</span></li>
+                            <li class="flex items-center gap-2"><i class="fa fa-check-circle text-secondary text-xs"></i><span>Panquecas</span></li>
+                            <li class="flex items-center gap-2"><i class="fa fa-check-circle text-secondary text-xs"></i><span>Macarrão</span></li>
+                            <li class="flex items-center gap-2"><i class="fa fa-check-circle text-secondary text-xs"></i><span>Nhoque</span></li>
+                            <li class="flex items-center gap-2"><i class="fa fa-check-circle text-secondary text-xs"></i><span>Brownie</span></li>
+                            <li class="flex items-center gap-2"><i class="fa fa-check-circle text-secondary text-xs"></i><span>Lasanhas</span></li>
+                        </ul>
+                        
+                        <div class="flex items-center justify-center gap-3 mt-auto pt-4 border-t border-gray-200">
+                            <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/icons8-caution-68-1.png" alt="Aviso" class="w-8 h-8">
+                            <p class="text-xs font-semibold text-gray-600 text-center uppercase tracking-wide">E várias outras Delícias Surpresas Sem Glúten</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Bottom Wave -->
+        <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-none shape-divider-bottom z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path class="fill-lightCream" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- SECTION 5: +200 Receitas Galeria -->
+    <section class="bg-lightCream py-16 pb-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="font-script text-3xl md:text-5xl text-brandBrown mb-12">São +200 Receitas Passo a Passo <span class="text-textPrimary">pra nunca mais errar...</span></h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 justify-center items-center pb-12 mb-12 border-b border-gray-200">
+                <!-- Gallery 1-9 manually populated based on prompt structure constraints -->
+                <figure class="bg-white p-2 rounded shadow-md pb-6 text-center transform rotate-1 hover:rotate-0 transition">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/ee76876dbe.webp" alt="Pão Francês" class="w-full h-40 object-cover rounded-sm mb-3">
+                    <figcaption class="font-sans font-semibold text-xs tracking-wide">Pão Francês</figcaption>
+                </figure>
+                <figure class="bg-white p-2 rounded shadow-md pb-6 text-center transform -rotate-2 hover:rotate-0 transition">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/Pao-algodao-Caseiro.webp" alt="Pão Algodão" class="w-full h-40 object-cover rounded-sm mb-3">
+                    <figcaption class="font-sans font-semibold text-xs tracking-wide">Pão Algodão</figcaption>
+                </figure>
+                <figure class="bg-white p-2 rounded shadow-md pb-6 text-center transform rotate-1 hover:rotate-0 transition">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/image_1024-2.jpg" alt="Baguete" class="w-full h-40 object-cover rounded-sm mb-3">
+                    <figcaption class="font-sans font-semibold text-xs tracking-wide">Baguete</figcaption>
+                </figure>
+                <!-- Include the resting ones cleanly to meet instructions "HTML must include ALL sections... do NOT omit anything" -> implies all assets matching must be present logically -->
+                <figure class="bg-white p-2 rounded shadow-md pb-6 text-center transform -rotate-1 hover:rotate-0 transition hidden md:block">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2024/01/vegan-focaccia-rotated-1.webp" alt="Focaccia" class="w-full h-40 object-cover rounded-sm mb-3">
+                    <figcaption class="font-sans font-semibold text-xs tracking-wide">Focaccia</figcaption>
+                </figure>
+                <figure class="bg-white p-2 rounded shadow-md pb-6 text-center transform rotate-2 hover:rotate-0 transition hidden md:block">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/228-bk-5785-pizza-de-mucarela-caseira.webp" alt="Pizza" class="w-full h-40 object-cover rounded-sm mb-3">
+                    <figcaption class="font-sans font-semibold text-xs tracking-wide">Pizza</figcaption>
+                </figure>
+                <figure class="bg-white p-2 rounded shadow-md pb-6 text-center transform -rotate-2 hover:rotate-0 transition hidden md:block">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/68-chocotone-1.jpg" alt="Chocotone Premium" class="w-full h-40 object-cover rounded-sm mb-3">
+                    <figcaption class="font-sans font-semibold text-xs tracking-wide">Chocotone Premium</figcaption>
+                </figure>
+                <figure class="bg-white p-2 rounded shadow-md pb-6 text-center transform rotate-1 hover:rotate-0 transition hidden md:block">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/maxresdefault-8.jpg" alt="Pão de Coco" class="w-full h-40 object-cover rounded-sm mb-3">
+                    <figcaption class="font-sans font-semibold text-xs tracking-wide">Pão de Coco</figcaption>
+                </figure>
+                <figure class="bg-white p-2 rounded shadow-md pb-6 text-center transform -rotate-1 hover:rotate-0 transition hidden md:block">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/receita-de-bolo-de-milho-verde-simples-e-saboroso.jpg" alt="Bolo de Milho" class="w-full h-40 object-cover rounded-sm mb-3">
+                    <figcaption class="font-sans font-semibold text-xs tracking-wide">Bolo de Milho</figcaption>
+                </figure>
+                <figure class="bg-white p-2 rounded shadow-md pb-6 text-center transform rotate-2 hover:rotate-0 transition hidden md:block">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/Brownie.webp" alt="Brownie" class="w-full h-40 object-cover rounded-sm mb-3">
+                    <figcaption class="font-sans font-semibold text-xs tracking-wide">Brownie</figcaption>
+                </figure>
+                <figure class="bg-white p-2 rounded shadow-md pb-6 text-center transform -rotate-1 hover:rotate-0 transition">
+                    <img src="images/focaccia.png" alt="Focaccias" class="w-full h-40 object-cover rounded-sm mb-3">
+                    <figcaption class="font-sans font-semibold text-xs tracking-wide">Focaccias</figcaption>
+                </figure>
+                <figure class="bg-white p-2 rounded shadow-md pb-6 text-center transform rotate-2 hover:rotate-0 transition">
+                    <img src="images/pao-italiano.jpg" alt="Pães Italianos" class="w-full h-40 object-cover rounded-sm mb-3">
+                    <figcaption class="font-sans font-semibold text-xs tracking-wide">Pães Italianos</figcaption>
+                </figure>
+                <figure class="bg-white p-2 rounded shadow-md pb-6 text-center transform -rotate-2 hover:rotate-0 transition">
+                    <img src="images/ciabata.png" alt="Pães Ciabatas" class="w-full h-40 object-cover rounded-sm mb-3">
+                    <figcaption class="font-sans font-semibold text-xs tracking-wide">Pães Ciabatas</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: Camila Moura -->
+    <section class="bg-lightCream pb-20 px-4 pt-10">
+        <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row gap-12 text-center md:text-left justify-center items-center">
+            <div class="w-full md:w-5/12 flex justify-center animated fadeInUp">
+                 <img src="https://deliciassemgluten.online/wp-content/uploads/2024/01/fotoo.png" alt="Camila Moura Bio" width="800" class="max-w-sm md:max-w-full drop-shadow-lg">
+            </div>
+            <div class="w-full md:w-6/12 pt-8">
+                <div class="flex items-center justify-center md:justify-start gap-4 mb-8">
+                    <h2 class="font-script text-4xl md:text-5xl text-brandBrown border-b-2 border-brandBrown pb-2"><span class="text-textPrimary">Camila</span> Moura</h2>
+                </div>
+                <div class="font-body text-[14px] md:text-[15px] space-y-4 text-gray-700 leading-relaxed text-justify px-2 md:px-0">
+                    <p>Camila Moura, aos 31 anos, moradora de Curitiba, teve <strong>sua vida na gastronomia transformada</strong> quando sua filha, Sofia, foi diagnosticada com intolerância ao glúten.</p>
+                    <p>Determinada a proporcionar uma dieta saudável à família, Camila mergulhou na culinária sem glúten, <strong>explorando ingredientes alternativos e técnicas inovadoras.</strong></p>
+                    <p>Com o apoio do marido, Camila não só se dedicou a criar pratos deliciosos e seguros para Sofia, mas <strong>também compartilhou suas receitas.</strong> Sua paixão pela culinária sem glúten atraiu uma comunidade nacional em busca de inspiração para suas próprias jornadas gastronômicas.</p>
+                    <p>A história de Camila reflete como, por meio da dedicação e do amor pela família, é possível superar desafios e criar uma experiência culinária inclusiva.</p>
+                    <p>Assim, a trajetória de Camila Moura ecoa em toda a comunidade que ela inspirou a abraçar <strong>uma vida sem glúten com entusiasmo e sabor.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: Para quem é recomendado? -->
+    <section class="dot-pattern py-20 px-4 relative border-t border-gray-200">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="font-script text-4xl md:text-5xl text-brandBrown mb-16">Para quem é recomendado?</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/guia_paes_sem_gluten-3.png" alt="Doença Celíaca" width="80" height="80" class="mb-4 delay-100">
+                    <p class="font-body text-xs md:text-sm text-gray-800 font-medium">Para quem é <strong>celíaca, diabética ou tem alguma restrição alimentar</strong> e não quer abrir mão de comer um pãozinho delicioso todos os dias.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/guia_paes_sem_gluten-4.png" alt="Vegano / Vegetariano" width="80" height="80" class="mb-4 delay-200">
+                    <p class="font-body text-xs md:text-sm text-gray-800 font-medium">Para quem é <strong>vegano ou vegetariano e quer comer um pão de qualidade</strong>, sem precisar testar várias receitas diferentes e desperdiçar farinha.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/guia_paes_sem_gluten-5.png" alt="Pouco Tempo" width="80" height="80" class="mb-4 delay-300">
+                    <p class="font-body text-xs md:text-sm text-gray-800 font-medium">Para quem <strong>não tem tempo, mas quer fazer pães sem glúten</strong>, com aparência e textura de pão, com apenas alguns minutos por dia.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/guia_paes_sem_gluten-6.png" alt="Renda Extra" width="80" height="80" class="mb-4 delay-400">
+                    <p class="font-body text-xs md:text-sm text-gray-800 font-medium">Para quem quer atender uma demanda que vem crescendo e gerar uma <strong>nova renda com a venda dos pães sem glúten.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: Aplicativo de Pães Artesanais -->
+    <section class="bg-white py-20 px-4 border-b border-gray-100">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="font-script text-3xl md:text-4xl text-brandBrown mb-6">Aplicativo de Pães Artesanais <span class="text-textPrimary font-bold">Sem Glúten</span></h2>
+            <p class="font-body text-sm font-medium mb-12">O <strong>Aplicativo é</strong> uma experiência perfeita para quem quer viver de uma maneira mais gostosa e saudável, fazendo receitas selecionadas pela Camila Moura.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12 text-left bg-lightCream p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
+                
+                <div class="flex items-start gap-4">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/icons8-chapeu-de-chef-50-1.png" alt="Chef Hat" class="w-10 mt-1 opacity-80">
+                    <p class="font-body text-sm text-gray-700 leading-relaxed">Você vai ter Acesso a todos os conteúdos e <strong>Bônus exclusivos</strong> da Chef.</p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/icons8-chapeu-de-chef-50-1.png" alt="Chef Hat" class="w-10 mt-1 opacity-80">
+                    <p class="font-body text-sm text-gray-700 leading-relaxed">Você vai adquirir todo o conhecimento que aprendi em mais de 10 anos de <strong>panificação e confeitaria.</strong></p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/icons8-chapeu-de-chef-50-1.png" alt="Chef Hat" class="w-10 mt-1 opacity-80">
+                    <p class="font-body text-sm text-gray-700 leading-relaxed">Coleção Exclusiva de Receitas de Pães Sem Glúten com <strong>videoaulas gravadas passo a passo</strong> para aprender com facilidade.</p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/icons8-chapeu-de-chef-50-1.png" alt="Chef Hat" class="w-10 mt-1 opacity-80">
+                    <p class="font-body text-sm text-gray-700 leading-relaxed"><strong>Aplicativo exclusivo</strong> para facilitar sua visualização e busca, com todo passo a passo que você deve saber.</p>
+                </div>
+
+            </div>
+
+            <p class="font-body text-sm mt-8 mb-8">Você <strong>NÃO</strong> precisa de ingredientes caros ou de uma farinha sem glúten secreta. Eu vou te ensinar como você pode <strong>fazer a sua própria farinha de forma rápida e prática.</strong></p>
+
+            <button class="bg-primary hover:bg-[#ebae42] transition-colors shadow-btn-glow text-textPrimary font-extrabold font-sans text-sm md:text-base px-10 py-5 rounded-2xl uppercase tracking-wider transform hover:-translate-y-1">
+                SIM! EU QUERO APRENDER <br>
+                <span class="text-[10px] font-normal flex items-center justify-center gap-1 mt-1"><i class="fa fa-lock"></i> COMPRA 100% SEGURA</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECTION 9: O que nossas Alunas estão dizendo -->
+    <section class="bg-gray-100 py-16 overflow-hidden">
+        <h2 class="text-center font-script text-3xl md:text-5xl text-brandBrown mb-12">O que nossas <span class="text-textPrimary">Alunas</span> estão dizendo:</h2>
+        
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex overflow-x-auto gap-4 pb-8 hide-scrollbar snap-x snap-mandatory">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2024/04/Prova-1.png" alt="Prova 1" class="h-[450px] w-auto snap-center rounded-xl shadow-lg border-2 border-white object-cover shrink-0">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2024/04/prova-2.png" alt="prova 2" class="h-[450px] w-auto snap-center rounded-xl shadow-lg border-2 border-white object-cover shrink-0">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2024/04/prova-3.png" alt="prova 3" class="h-[450px] w-auto snap-center rounded-xl shadow-lg border-2 border-white object-cover shrink-0">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2024/04/prova-4.png" alt="prova 4" class="h-[450px] w-auto snap-center rounded-xl shadow-lg border-2 border-white object-cover shrink-0">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2024/04/prova-5.png" alt="prova 5" class="h-[450px] w-auto snap-center rounded-xl shadow-lg border-2 border-white object-cover shrink-0">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2024/04/prova-6.png" alt="prova 6" class="h-[450px] w-auto snap-center rounded-xl shadow-lg border-2 border-white object-cover shrink-0">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2024/04/prova-7.png" alt="prova 7" class="h-[450px] w-auto snap-center rounded-xl shadow-lg border-2 border-white object-cover shrink-0">
+            </div>
+            
+            <div class="flex justify-center gap-2 mt-4">
+                <div class="w-2 h-2 rounded-full bg-primary outline outline-1 outline-primary"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-gray-400 mt-[1px]"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-gray-400 mt-[1px]"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-gray-400 mt-[1px]"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-gray-400 mt-[1px]"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: Bônus Exclusivos -->
+    <section class="bg-white py-20 px-4 text-center">
+        <h2 class="font-script text-3xl md:text-4xl text-brandBrown mb-4 max-w-4xl mx-auto leading-relaxed">
+            Adquirindo agora você recebe Aplicativo Exclusivo +6 Bônus e <span class="text-primary">Certificado de Conclusão 🎓</span>
+        </h2>
+
+        <div class="max-w-6xl mx-auto mt-16 grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-y-16">
+            
+            <!-- Bonus 1 -->
+            <div class="flex flex-col items-center">
+                <h3 class="font-sans font-bold text-sm md:text-base mb-4 leading-tight">Bônus 01: Pães<br>Trançados Sem Glúten</h3>
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2024/01/2-2-203x300.png" alt="Bônus Pães Trançados" class="w-32 md:w-44 h-auto drop-shadow-xl mb-4">
+                <p class="text-xs md:text-sm font-semibold mt-2">VALOR NORMAL: <span class="line-through text-red-500 font-normal">R$ 35,90</span></p>
+                <p class="text-sm md:text-base font-bold">VALOR HOJE: <span class="text-secondary">GRÁTIS</span></p>
+            </div>
+            
+            <!-- Bonus 2 -->
+            <div class="flex flex-col items-center">
+                <h3 class="font-sans font-bold text-sm md:text-base mb-4 leading-tight">Bônus 02: Massas<br>Divinas Sem Glúten</h3>
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2024/01/5-203x300.png" alt="Bônus Massas" class="w-32 md:w-44 h-auto drop-shadow-xl mb-4">
+                <p class="text-xs md:text-sm font-semibold mt-2">VALOR NORMAL: <span class="line-through text-red-500 font-normal">R$ 57,90</span></p>
+                <p class="text-sm md:text-base font-bold">VALOR HOJE: <span class="text-secondary">GRÁTIS</span></p>
+            </div>
+
+            <!-- Bonus 3 -->
+            <div class="flex flex-col items-center">
+                <h3 class="font-sans font-bold text-sm md:text-base mb-4 leading-tight">Bônus 03: Bolos<br>Perfeitos Sem Glúten</h3>
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2024/01/3-203x300.png" alt="Bônus Bolos Perfeitos" class="w-32 md:w-44 h-auto drop-shadow-xl mb-4">
+                <p class="text-xs md:text-sm font-semibold mt-2">VALOR NORMAL: <span class="line-through text-red-500 font-normal">R$ 74,90</span></p>
+                <p class="text-sm md:text-base font-bold">VALOR HOJE: <span class="text-secondary">GRÁTIS</span></p>
+            </div>
+
+            <!-- Bonus 4 -->
+            <div class="flex flex-col items-center">
+                <h3 class="font-sans font-bold text-sm md:text-base mb-4 leading-tight">Bônus 04: Panetones<br>e Chocotones Sem<br>Glúten</h3>
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2024/01/4-2-203x300.png" alt="Bônus Panetones" class="w-32 md:w-44 h-auto drop-shadow-xl mb-4">
+                <p class="text-xs md:text-sm font-semibold mt-2">VALOR NORMAL: <span class="line-through text-red-500 font-normal">R$ 58,50</span></p>
+                <p class="text-sm md:text-base font-bold">VALOR HOJE: <span class="text-secondary">GRÁTIS</span></p>
+            </div>
+
+            <!-- Bonus 5 -->
+            <div class="flex flex-col items-center">
+                <h3 class="font-sans font-bold text-sm md:text-base mb-4 leading-tight">Bônus 05: Guia de<br>Fermentação Natural</h3>
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2024/01/8-203x300.png" alt="Bônus Fermentação" class="w-32 md:w-44 h-auto drop-shadow-xl mb-4">
+                <p class="text-xs md:text-sm font-semibold mt-2">VALOR NORMAL: <span class="line-through text-red-500 font-normal">R$ 89,90</span></p>
+                <p class="text-sm md:text-base font-bold">VALOR HOJE: <span class="text-secondary">GRÁTIS</span></p>
+            </div>
+
+            <!-- Bonus 6 -->
+            <div class="flex flex-col items-center">
+                <h3 class="font-sans font-bold text-sm md:text-base mb-4 leading-tight">Bônus 06: Guia de<br>Substituição de<br>Ingredientes</h3>
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2024/01/7-203x300.png" alt="Bônus Substituição" class="w-32 md:w-44 h-auto drop-shadow-xl mb-4">
+                <p class="text-xs md:text-sm font-semibold mt-2">VALOR NORMAL: <span class="line-through text-red-500 font-normal">R$ 40,17</span></p>
+                <p class="text-sm md:text-base font-bold">VALOR HOJE: <span class="text-secondary">GRÁTIS</span></p>
+            </div>
+
+        </div>
+
+        <div class="mt-16 text-center">
+            <p class="font-sans text-xl font-bold uppercase track-wide">TOTAL DOS BÔNUS:</p>
+            <p class="font-sans text-2xl line-through text-red-600 font-bold mb-1">R$ 356,90</p>
+            <p class="font-sans text-xl font-bold uppercase mt-4">VALOR HOJE:</p>
+            <p class="font-sans text-5xl font-black text-secondary tracking-wide">GRÁTIS</p>
+        </div>
+    </section>
+
+    <!-- SECTION 11: Urgency / Vagas Limitadas -->
+    <section class="bg-[#8A1500] text-center py-10 px-4 border-y-4 border-black border-opacity-20 shadow-inner">
+        <h2 class="text-white font-sans text-2xl md:text-4xl font-extrabold uppercase mb-4 flex flex-col items-center gap-2">
+            <i class="fa fa-exclamation-triangle text-primary text-3xl mb-1"></i>
+            ATENÇÃO<br>VAGAS LIMITADAS!
+        </h2>
+        <p class="text-white text-xs md:text-sm font-semibold tracking-wider mb-6">INFELIZMENTE CONSIGO LIBERAR APENAS 10 CUPONS PROMOCIONAIS POR DIA</p>
+        
+        <div class="w-full max-w-2xl mx-auto bg-black bg-opacity-30 p-1 mb-8 rounded shadow-inner">
+            <div class="w-[87%] bg-primary h-4 relative">
+                 <span class="absolute right-2 top-0 text-[10px] sm:text-xs font-bold leading-4">87%</span>
+            </div>
+        </div>
+
+        <p class="text-white font-light text-xs md:text-sm uppercase mb-6 tracking-wide">
+            APÓS FINALIZAR AS VAGAS O VALOR SERÁ REAJUSTADO AO PREÇO CHEIO<br>
+            <span class="opacity-70 mt-1 inline-block">Clique abaixo para garantir sua vaga no preço promocional.</span>
+        </p>
+
+        <button class="bg-primary hover:bg-[#ebae42] transition-colors shadow-btn-glow text-textPrimary font-extrabold font-sans text-sm md:text-base px-8 py-4 rounded-xl uppercase transform hover:scale-105">
+            SIM! EU QUERO APRENDER
+        </button>
+    </section>
+
+    <!-- SECTION 12: Special Offer / Pricing CTA -->
+    <section class="bg-[#1A0A02] py-20 px-4 relative">
+        <div class="max-w-5xl mx-auto bg-[#1A0A02] md:p-8 rounded-lg flex flex-col md:flex-row gap-0 overflow-hidden shadow-2xl border border-white/5">
+            
+            <div class="md:w-1/2 p-6 md:p-8">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/fpdl.in_padeiro-feminino-amassar-ou-formar-massa-enquanto-trabalhava-na-padaria-pizza-fresca-torta-pao-ou-processo-de-preparacao-de-massa-doce_266732-32677_large.jpg" alt="Padeiro Massa Fresca" class="w-full h-auto rounded shadow-xl mb-8 opacity-90 border border-[#2E190D]">
+                
+                <ul class="text-gray-300 font-body text-xs md:text-sm space-y-3 font-light">
+                    <li class="flex items-center gap-3 border-b border-white/10 pb-2"><i class="fa fa-check-circle text-secondary"></i> Aplicativo de Pães Artesanais Sem Glúten</li>
+                    <li class="flex items-center gap-3 border-b border-white/10 pb-2"><i class="fa fa-check-circle text-secondary"></i> Vídeoaulas gravadas com passo a passo</li>
+                    <li class="flex items-center gap-3 border-b border-white/10 pb-2"><i class="fa fa-check-circle text-secondary"></i> Apostilas Práticas em PDF</li>
+                    <li class="flex items-center gap-3 border-b border-white/10 pb-2"><i class="fa fa-check-circle text-secondary"></i> +6 Bônus Exclusivos (Somente Hoje!)</li>
+                    <li class="flex items-center gap-3 border-b border-white/10 pb-2"><i class="fa fa-check-circle text-secondary"></i> Suporte com a Equipe da Chef</li>
+                    <li class="flex items-center gap-3 border-b border-white/10 pb-2"><i class="fa fa-check-circle text-secondary"></i> Comunidade Exclusiva no WhatsApp</li>
+                    <li class="flex items-center gap-3 border-b border-white/10 pb-2"><i class="fa fa-check-circle text-secondary"></i> Acesso Vitalício + Certificado</li>
+                    <li class="flex items-center gap-3"><i class="fa fa-check-circle text-secondary"></i> Garantia Incondicional de 7 Dias</li>
+                </ul>
+            </div>
+
+            <div class="md:w-1/2 bg-[#120701] p-8 md:p-12 text-center rounded-r-lg border-l border-white/5 flex flex-col justify-center items-center">
+                <h3 class="text-white font-sans font-black text-2xl md:text-3xl uppercase tracking-wider mb-2">OFERTA ESPECIAL</h3>
+                <h4 class="font-script text-primary text-3xl md:text-4xl mb-4">+6 Bônus!</h4>
+                
+                <p class="text-gray-400 text-xs font-bold uppercase mb-8 tracking-widest leading-relaxed">
+                    PREÇO PROMOCIONAL<br>PARA OS PRÓXIMOS: <span class="text-primary font-black">09 CLIENTES</span>
+                </p>
+
+                <p class="text-gray-400 text-sm font-medium mb-2">De <span class="line-through">R$197,00</span> Por apenas 12x de:</p>
+                <p class="text-primary font-black font-sans text-5xl md:text-6xl mb-4 relative drop-shadow-md">
+                    R$ 7,02
+                </p>
+                <p class="text-gray-300 font-medium text-sm mb-10">Ou R$ 69,90 à vista</p>
+
+                <button class="bg-secondary hover:bg-[#008f30] text-white font-extrabold font-sans text-sm md:text-lg px-12 py-5 rounded-xl uppercase tracking-wider w-full shadow-[0_5px_20px_rgba(0,173,59,0.3)] transform hover:-translate-y-1 transition-all">
+                    COMPRAR AGORA
+                </button>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- SECTION 13: FAQ -->
+    <section class="bg-gray-100 py-20 px-4">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+            <div class="md:w-1/3">
+                <h2 class="font-script text-4xl text-brandBrown mb-4 leading-tight">Dúvidas <span class="text-textPrimary">Frequentes</span></h2>
+                <p class="font-body text-sm text-gray-600">Separamos os <strong>questionamentos mais comuns</strong> para que você sinta total confiança o material...</p>
+            </div>
+            
+            <div class="md:w-2/3 space-y-3 font-body text-sm custom-accordion">
+                <!-- FAQ Accordions (Static visually to match pure front-end clone requested if logic is strictly static, but detail tag works) -->
+                <details class="bg-white rounded-lg border border-gray-200 group transition-colors">
+                    <summary class="p-5 font-semibold text-gray-800 cursor-pointer flex justify-between items-center outline-none">
+                        <span class="flex items-center gap-3"><span class="text-brandBrown font-bold">+</span> Nunca fiz um pão na vida... consigo fazer?</span>
+                        <i class="fa fa-chevron-down text-gray-400 text-xs transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <div class="p-5 pt-0 text-gray-600 leading-relaxed border-t border-gray-100 mt-2">
+                        Sim, o passo a passo foi desenvolvido especialmente para iniciantes.
+                    </div>
+                </details>
+                
+                <details class="bg-white rounded-lg border border-gray-200 group transition-colors">
+                    <summary class="p-5 font-semibold text-gray-800 cursor-pointer flex justify-between items-center outline-none">
+                        <span class="flex items-center gap-3"><span class="text-brandBrown font-bold">+</span> Como vou receber o material?</span>
+                        <i class="fa fa-chevron-down text-gray-400 text-xs transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <div class="p-5 pt-0 text-gray-600 leading-relaxed border-t border-gray-100 mt-2">
+                        O acesso ao aplicativo será enviado para o seu e-mail imediatamente após a confirmação do pagamento.
+                    </div>
+                </details>
+
+                <div class="bg-white rounded-lg border border-gray-200 p-5 font-semibold text-gray-800 flex justify-between items-center opacity-80 cursor-default">
+                    <span class="flex items-center gap-3"><span class="text-brandBrown font-bold">+</span> As vídeo aulas ficam disponíveis por quanto tempo?</span>
+                    <i class="fa fa-chevron-right text-gray-300 text-xs"></i>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-5 font-semibold text-gray-800 flex justify-between items-center opacity-80 cursor-default">
+                    <span class="flex items-center gap-3"><span class="text-brandBrown font-bold">+</span> Recebo certificado ao finalizar o curso?</span>
+                    <i class="fa fa-chevron-right text-gray-300 text-xs"></i>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-5 font-semibold text-gray-800 flex justify-between items-center opacity-80 cursor-default">
+                    <span class="flex items-center gap-3"><span class="text-brandBrown font-bold">+</span> É seguro fazer a compra?</span>
+                    <i class="fa fa-chevron-right text-gray-300 text-xs"></i>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-5 font-semibold text-gray-800 flex justify-between items-center opacity-80 cursor-default">
+                    <span class="flex items-center gap-3"><span class="text-brandBrown font-bold">+</span> Quais as formas de pagamento?</span>
+                    <i class="fa fa-chevron-right text-gray-300 text-xs"></i>
+                </div>
+                <div class="bg-white rounded-lg border border-gray-200 p-5 font-semibold text-gray-800 flex justify-between items-center opacity-80 cursor-default">
+                    <span class="flex items-center gap-3"><span class="text-brandBrown font-bold">+</span> Como funciona a garantia?</span>
+                    <i class="fa fa-chevron-right text-gray-300 text-xs"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 14: Warning Reverse CTA -->
+    <section class="bg-[#561405] text-center py-16 px-4">
+        <div class="max-w-4xl mx-auto flex flex-col items-center">
+            <i class="fa fa-exclamation-triangle text-primary text-4xl mb-6"></i>
+            <p class="text-gray-200 font-body text-xs md:text-sm font-medium mb-6 leading-relaxed max-w-3xl">
+                Queremos pessoas comprometidas e que querem realmente aprender receitas que irão transformar sua relação com Pães sem Glúten. Se você não está disponível no momento e não pode se comprometer com você mesmo, passe sua vaga pra frente, no momento certo pode ser que surja outra oportunidade pra você.
+            </p>
+            
+            <a href="#" class="text-white font-bold text-sm tracking-wider uppercase border-b border-white pb-1 mb-8 hover:text-primary hover:border-primary transition-colors">
+                NÃO QUERO ESSA VAGA
+            </a>
+
+            <p class="text-gray-300 font-body text-xs md:text-sm mb-8 leading-relaxed max-w-3xl">
+                Agora se você está disposta a investir em você, de forma definitiva e aprender a fazer os seus próprios Pães Artesanais sem Glúten, sem Erros e Desperdícios. Aproveite agora sua última chance:
+            </p>
+
+            <button class="bg-primary hover:bg-[#ebae42] transition-colors shadow-btn-glow text-textPrimary font-extrabold font-sans text-xs md:text-sm px-8 py-4 rounded-xl uppercase tracking-wider w-full md:w-auto">
+                QUERO CUIDAR DE MIM
+            </button>
+        </div>
+    </section>
+
+    <!-- SECTION 15: Guarantee -->
+    <section class="bg-lightCream py-20 px-4">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            <div class="w-full md:w-5/12 flex justify-center">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/Garantia-100-Risco-Zero-7-dias.png" alt="Garantia-100-Risco-Zero-7-dias" width="300" class="drop-shadow-lg">
+            </div>
+            <div class="w-full md:w-7/12 text-center md:text-left">
+                <h3 class="font-sans font-light text-3xl md:text-4xl text-textPrimary mb-4">Risco <span class="font-bold">Zero</span></h3>
+                
+                <p class="font-body text-[13px] md:text-[14px] text-gray-700 leading-relaxed mb-4">
+                    Sua compra tem <strong>garantia completa de satisfação</strong> ou seu dinheiro de volta. Garantimos um <strong>material de excelente qualidade.</strong>
+                </p>
+                <p class="font-body text-[13px] md:text-[14px] text-gray-700 leading-relaxed mb-8">
+                    Você poderá comprovar, <strong>sem riscos.</strong> Se no prazo de 7 após a compra, você não ficar satisfeito(a), nós devolvemos seu dinheiro.
+                </p>
+                
+                <button class="bg-secondary hover:bg-[#008f30] transition-colors text-white font-extrabold font-sans text-xs md:text-sm px-8 py-4 rounded shadow-md uppercase tracking-wide w-full md:w-auto">
+                    COMPRAR COM SEGURANÇA
+                </button>
+                <div class="mt-2 text-center md:text-left flex items-center justify-center md:justify-start gap-1">
+                    <i class="fa fa-lock text-[10px] text-gray-500"></i>
+                    <span class="text-[10px] text-gray-500 uppercase font-bold tracking-wide">Compra 100% Segura</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / Badges -->
+    <footer class="bg-black py-16 px-4">
+        <div class="max-w-5xl mx-auto flex flex-col items-center justify-center opacity-60">
+            <div class="flex gap-6 mb-8">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/icons8-cartao-96.png" alt="Pagamento" width="48" height="48" class="grayscale">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/icons8-seguro-96-5.png" alt="Compra Segura" width="48" height="48" class="grayscale">
+                <img src="https://deliciassemgluten.online/wp-content/uploads/2023/12/icons8-seguro-96-4.png" alt="Dados Seguros" width="48" height="48" class="grayscale">
+            </div>
+            <p class="text-[#333333] text-[10px] text-center max-w-4xl font-body leading-relaxed">
+                Este site não faz parte do site do Facebook ou do Facebook Inc. Além disso, este site NÃO é endossado pelo Facebook de forma alguma. FACEBOOK é uma marca comercial marca registrada da FACEBOOK, Inc. A Camila Moura reserva-se no direito de alterar as condições desta oferta. Reembolsos são regidos pela política da plataforma de processamento de pagamentos Eduzz.
+            </p>
+            <p class="text-[#333333] text-[10px] text-center mt-4 uppercase">
+                Camila Moura © 2024 - Todos os Direitos Reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
